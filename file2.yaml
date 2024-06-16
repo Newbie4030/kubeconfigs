@@ -1,0 +1,19 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: REDACTED
+    server: https://cluster2.example.com
+  name: cluster2
+contexts:
+- context:
+    cluster: cluster2
+    user: default
+  name: default
+current-context: default
+kind: Config
+preferences: {}
+users:
+- name: default
+  user:
+    client-certificate-data: REDACTED
+    client-key-data: REDACTED
